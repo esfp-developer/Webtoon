@@ -78,12 +78,11 @@ public struct WebtoonListFeature {
                 state.searchText = text
                 return .none
                 
-            case .webtoonTapped:
-                // Navigation logic will be handled by parent
-                return .none
-                
             case .retryTapped:
                 return .send(.loadWebtoons)
+                
+            default:
+                return .none
             }
         }
     }
@@ -102,114 +101,3 @@ public struct WebtoonListFeature {
     }
 }
 
-// MARK: - Webtoon List View
-public struct WebtoonListView: View {
-    let store: StoreOf<WebtoonListFeature>
-    
-    public init(store: StoreOf<WebtoonListFeature>) {
-        self.store = store
-    }
-    
-    public var body: some View {
-        WithPerceptionTracking {
-            NavigationView {
-                VStack(spacing: 0) {
-                    // Search Bar
-                    SearchBar(
-                        text: Binding(
-                            get: { store.searchText },
-                            set: { store.send(.searchTextChanged($0)) }
-                        )
-                    )
-                    .spacing(.md)
-                    
-                    // Content
-                    Group {
-                        if store.isLoading {
-                            LoadingView()
-                        } else if let errorMessage = store.errorMessage {
-                            ErrorView(message: errorMessage) {
-                                store.send(.retryTapped)
-                            }
-                        } else if store.filteredWebtoons.isEmpty {
-                            EmptyStateView(
-                                title: "웹툰이 없습니다",
-                                message: store.searchText.isEmpty ?
-                                    "아직 등록된 웹툰이 없습니다." :
-                                    "'\(store.searchText)'에 대한 검색 결과가 없습니다.",
-                                systemImage: "book.closed"
-                            )
-                        } else {
-                            WebtoonGrid(
-                                webtoons: store.filteredWebtoons,
-                                onWebtoonTap: { webtoonId in
-                                    store.send(.webtoonTapped(webtoonId))
-                                }
-                            )
-                        }
-                    }
-                }
-                .navigationTitle("웹툰")
-                .background(Color.backgroundColor)
-                .onAppear {
-                    store.send(.onAppear)
-                }
-            }
-        }
-    }
-}
-
-// MARK: - Search Bar
-private struct SearchBar: View {
-    @Binding var text: String
-    
-    var body: some View {
-        HStack {
-            Image(systemName: "magnifyingglass")
-                .foregroundColor(.textSecondary)
-            
-            TextField("웹툰 검색...", text: $text)
-                .textFieldStyle(PlainTextFieldStyle())
-        }
-        .spacing(.md)
-        .background(Color.cardBackgroundColor)
-        .cornerRadius(.medium)
-    }
-}
-
-// MARK: - Webtoon Grid
-private struct WebtoonGrid: View {
-    let webtoons: [Webtoon]
-    let onWebtoonTap: (String) -> Void
-    
-    private let columns = [
-        GridItem(.flexible()),
-        GridItem(.flexible())
-    ]
-    
-    var body: some View {
-        ScrollView {
-            LazyVGrid(columns: columns, spacing: Spacing.md.value) {
-                ForEach(webtoons) { webtoon in
-                    WebtoonCard(webtoon: webtoon) {
-                        onWebtoonTap(webtoon.id)
-                    }
-                }
-            }
-            .spacing(.md)
-        }
-    }
-}
-
-// MARK: - Preview
-#if DEBUG
-struct WebtoonListView_Previews: PreviewProvider {
-    static var previews: some View {
-        WebtoonListView(
-            store: Store(initialState: WebtoonListFeature.State()) {
-                WebtoonListFeature()
-            }
-        )
-    }
-}
-#endif

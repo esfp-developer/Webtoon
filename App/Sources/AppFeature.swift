@@ -1,7 +1,4 @@
-import SwiftUI
 import ComposableArchitecture
-import Core
-import UI
 import WebtoonList
 import WebtoonDetail
 import WebtoonViewer
@@ -56,14 +53,11 @@ struct AppFeature {
                 state.path.append(.webtoonDetail(WebtoonDetailFeature.State(webtoonId: webtoonId)))
                 return .none
                 
-            case .webtoonList:
-                return .none
-                
             case let .path(.element(id: _, action: .webtoonDetail(.episodeTapped(episodeId)))):
                 state.path.append(.webtoonViewer(WebtoonViewerFeature.State(episodeId: episodeId)))
                 return .none
                 
-            case .path:
+            default:
                 return .none
             }
         }
@@ -73,37 +67,3 @@ struct AppFeature {
     }
 }
 
-// MARK: - App View
-struct AppView: View {
-    let store: StoreOf<AppFeature>
-    
-    var body: some View {
-        NavigationStackStore(
-            store.scope(state: \.path, action: \.path)
-        ) {
-            WebtoonListView(
-                store: store.scope(
-                    state: \.webtoonList,
-                    action: \.webtoonList
-                )
-            )
-        } destination: { store in
-            switch store.state {
-            case .webtoonDetail:
-                if let webtoonDetailStore = store.scope(
-                    state: \.webtoonDetail,
-                    action: \.webtoonDetail
-                ) {
-                    WebtoonDetailView(store: webtoonDetailStore)
-                }
-            case .webtoonViewer:
-                if let webtoonViewerStore = store.scope(
-                    state: \.webtoonViewer,
-                    action: \.webtoonViewer
-                ) {
-                    WebtoonViewerView(store: webtoonViewerStore)
-                }
-            }
-        }
-    }
-}

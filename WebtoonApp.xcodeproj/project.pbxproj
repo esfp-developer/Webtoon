@@ -7,39 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01E5DDF8712CD68F0E1C00A1 /* WebtoonGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73AE5CB45C954951CE29D9 /* WebtoonGridView.swift */; };
+		0343E4B52CCF92E92F91B087 /* PageViewerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458733C894F6E34C43F54180 /* PageViewerContentView.swift */; };
 		14CB2C49DE74D70A3B687BBC /* WebtoonDetail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4F5DC46BFE0A37B62A8A87B /* WebtoonDetail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15B5861F25A0D4A3C8B042D9 /* TuistAssets+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E906155E14FA46B534BF120 /* TuistAssets+UI.swift */; };
 		193219931D528DD30437429C /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDE66E8B23D5301FE579B03 /* UI.framework */; };
 		1BEBB4441843AB5DE24C39E5 /* WebtoonViewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F557D4B7AE2398686DCE920D /* WebtoonViewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		31B161DEA5C1BEFB5A72CC31 /* WebtoonListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86810620654FE4CAAAF3806 /* WebtoonListFeature.swift */; };
+		32C2D6BF29B61318F6F138CF /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF57B21AD507B2F3BCE95F91 /* AppView.swift */; };
 		33E80B8DD51B55E12A5B4150 /* WebtoonDetail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F5DC46BFE0A37B62A8A87B /* WebtoonDetail.framework */; };
 		392CE4DDC7D531B021AC776C /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDE66E8B23D5301FE579B03 /* UI.framework */; };
+		399768E67B9210A9B6638347 /* WebtoonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ACBE167E477AF320A9D0FD /* WebtoonListView.swift */; };
 		3C3F34D3F959C1D468BD1137 /* TuistAssets+WebtoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307BDC6C7D7234E5124FBF2E /* TuistAssets+WebtoonApp.swift */; };
 		3CC0902E0126BB31EAF1713A /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA909C294B8B640924D51096 /* Core.framework */; };
+		55EEFE9DAE1584D1B062B6A8 /* PageViewerContentPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936257CECEB2B3BD469EC9D9 /* PageViewerContentPresentationModel.swift */; };
 		60ACFFBC7EB187BF57BEA1E5 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA909C294B8B640924D51096 /* Core.framework */; };
 		6512216EC2FABB54259F6BD9 /* WebtoonList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C6035E368A81608271E965 /* WebtoonList.framework */; };
+		65174D367750DD65EBBB89CC /* WebtoonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096A2C6B8B321A2786893954 /* WebtoonHeaderView.swift */; };
+		69E44AB6280A03E2F553E65B /* EpisodeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568374A841D89815479D6FDC /* EpisodeRowView.swift */; };
 		6B1BD090693BF8F7D6DD2317 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CBE9AF654B7E7ECCB6725 /* Utils.swift */; };
 		6B617D1A3E2630E974E5486B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 6182A341662BCC3931A79ED9 /* ComposableArchitecture */; };
 		6C8AE2978CD5E8EE9A2D6E15 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A224DFDF672F823CCEB44C2 /* DesignSystem.swift */; };
 		6EECC1E8B00701E415519710 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBBC30C4219F0AB96C2DAA3 /* NetworkService.swift */; };
 		71D314C43CC1808189861509 /* TuistBundle+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC15AD028F935A89D961B0 /* TuistBundle+UI.swift */; };
 		777FFDFD89425D43CD380B55 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81A65D230C13E72FD8D439E /* Models.swift */; };
+		7A31A840FEDEC179D6EFBEC8 /* WebtoonHeaderPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441713D9C3ECFE3FBB9771AE /* WebtoonHeaderPresentationModel.swift */; };
+		7D2601D850A863E22C9C1C69 /* ViewerNavigationOverlayPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA08D24F39524622703DFFCD /* ViewerNavigationOverlayPresentationModel.swift */; };
 		7E25E8280D684305D0BC1595 /* WebtoonViewerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476CB4EFB8C842377BF9735C /* WebtoonViewerFeature.swift */; };
 		7EDB5C6ACD89D676027297C3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A316275E7D5DF734EE8B9ACA /* Colors.xcassets */; };
 		8B731D65DF3AF6ABFD657BD0 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDE66E8B23D5301FE579B03 /* UI.framework */; };
 		906D9E29A9548DB3710CAE9A /* WebtoonViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F557D4B7AE2398686DCE920D /* WebtoonViewer.framework */; };
 		9978E1B6B6BCF112385442A6 /* WebtoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A0BA97750F478E54A65BA8 /* WebtoonApp.swift */; };
 		A3B0D7B737B1B36760E5B986 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A65A748F9BEF9FC0A2E1D2 /* AppFeature.swift */; };
+		A6BC356F94B58C4E431CE025 /* ScrollViewerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BEDFFFCF93A1EA58748F7 /* ScrollViewerContentView.swift */; };
 		A99204CC114951E0350AC7B9 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08CE09A847894A04C7B8366 /* Components.swift */; };
+		AA5C699936D8C294BDF2527E /* SearchBarPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C670F81FF725EA4761F29B4B /* SearchBarPresentationModel.swift */; };
+		AA939CF9A287C8B4DA64DA72 /* WebtoonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67B3A7B217A6FBA93A427F7 /* WebtoonDetailView.swift */; };
 		ADECA10E011FDCA8F3C1FA18 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDE66E8B23D5301FE579B03 /* UI.framework */; };
 		B6CFAB3A0A8845CE8C782AC4 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA909C294B8B640924D51096 /* Core.framework */; };
+		BC018EACD961CF5EA0288A4D /* EpisodeRowPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BAADD9A448C33A3C212888 /* EpisodeRowPresentationModel.swift */; };
+		BF921F439BA7B30C0486AE61 /* EpisodesSectionPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCB1D98915583C2117BB00E /* EpisodesSectionPresentationModel.swift */; };
+		C3638BBB55F411D7C17A4571 /* WebtoonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6431DD81BEB895870FFBBC /* WebtoonCardView.swift */; };
 		C43DA03C014C057E352C3835 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA909C294B8B640924D51096 /* Core.framework */; };
 		C4F335D749943E3A77E9994C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C3BBF6B1FA630B8DD78AE0 /* Assets.xcassets */; };
 		C95FECA674C39CB0A1C80AEF /* WebtoonList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1C6035E368A81608271E965 /* WebtoonList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB9D1BEE217B518049EAE380 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA909C294B8B640924D51096 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D30082B884B212BC42F69E01 /* WebtoonGridPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E396B59355235B4E7FB580 /* WebtoonGridPresentationModel.swift */; };
+		E2616559F91551667CBEFFE9 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96296A2E470190BA6DCBC018 /* SearchBarView.swift */; };
+		E97EF94D26C9908AF1DDFC6D /* EpisodesSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C1C1123AABF87B7C8EA0D5 /* EpisodesSectionView.swift */; };
+		EB68AAFA1847923E80B5F57A /* WebtoonCardPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FA60364EB9EFB431D7CCC1 /* WebtoonCardPresentationModel.swift */; };
+		EF7861F5C7D56F9BFBF37150 /* WebtoonViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61004A2798BBFE8BE8C815C9 /* WebtoonViewerView.swift */; };
 		F31382016BA42652C0424F7D /* WebtoonDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A87CF620EEC5697F71C06C /* WebtoonDetailFeature.swift */; };
 		F52A1D17AA3E18140B97348E /* TuistBundle+WebtoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFC016E24ECDEF7454F8B6 /* TuistBundle+WebtoonApp.swift */; };
 		F74AE763C0933E5E9E4D04B5 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDE66E8B23D5301FE579B03 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FBA2D85B23F9106E94BC12C0 /* ViewerNavigationOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2ACA052942561C8B23F011 /* ViewerNavigationOverlayView.swift */; };
+		FC6EC1E6F72817B8B94AFF58 /* ScrollViewerContentPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EDC29399671D6FB7E6FE7 /* ScrollViewerContentPresentationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,20 +213,32 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		096A2C6B8B321A2786893954 /* WebtoonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonHeaderView.swift; sourceTree = "<group>"; };
 		0E906155E14FA46B534BF120 /* TuistAssets+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+UI.swift"; sourceTree = "<group>"; };
 		10FC15AD028F935A89D961B0 /* TuistBundle+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+UI.swift"; sourceTree = "<group>"; };
 		26C4F6E0E42228E023815A61 /* WebtoonApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WebtoonApp-Info.plist"; sourceTree = "<group>"; };
+		304BEDFFFCF93A1EA58748F7 /* ScrollViewerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewerContentView.swift; sourceTree = "<group>"; };
 		307BDC6C7D7234E5124FBF2E /* TuistAssets+WebtoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+WebtoonApp.swift"; sourceTree = "<group>"; };
+		441713D9C3ECFE3FBB9771AE /* WebtoonHeaderPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonHeaderPresentationModel.swift; sourceTree = "<group>"; };
+		458733C894F6E34C43F54180 /* PageViewerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewerContentView.swift; sourceTree = "<group>"; };
 		476CB4EFB8C842377BF9735C /* WebtoonViewerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonViewerFeature.swift; sourceTree = "<group>"; };
 		48C41519BECC3493D7E152BE /* WebtoonList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WebtoonList-Info.plist"; sourceTree = "<group>"; };
 		4A4CBE9AF654B7E7ECCB6725 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4B73AE5CB45C954951CE29D9 /* WebtoonGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonGridView.swift; sourceTree = "<group>"; };
+		568374A841D89815479D6FDC /* EpisodeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRowView.swift; sourceTree = "<group>"; };
 		5BDE66E8B23D5301FE579B03 /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61004A2798BBFE8BE8C815C9 /* WebtoonViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonViewerView.swift; sourceTree = "<group>"; };
 		63E29DB407B8852A9729BA84 /* Core-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Core-Info.plist"; sourceTree = "<group>"; };
 		65C3BBF6B1FA630B8DD78AE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C9C23C2B7C19DE907271AF3 /* UI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UI-Info.plist"; sourceTree = "<group>"; };
+		76ACBE167E477AF320A9D0FD /* WebtoonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonListView.swift; sourceTree = "<group>"; };
 		7EEC19BF8CC150FEC2B4B908 /* WebtoonViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WebtoonViewer-Info.plist"; sourceTree = "<group>"; };
+		85FA60364EB9EFB431D7CCC1 /* WebtoonCardPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonCardPresentationModel.swift; sourceTree = "<group>"; };
 		86A0BA97750F478E54A65BA8 /* WebtoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonApp.swift; sourceTree = "<group>"; };
+		936257CECEB2B3BD469EC9D9 /* PageViewerContentPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewerContentPresentationModel.swift; sourceTree = "<group>"; };
+		96296A2E470190BA6DCBC018 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		9A224DFDF672F823CCEB44C2 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		A0C1C1123AABF87B7C8EA0D5 /* EpisodesSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesSectionView.swift; sourceTree = "<group>"; };
 		A316275E7D5DF734EE8B9ACA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		AA90B559E76C33984F3818C0 /* WebtoonDetail-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WebtoonDetail-Info.plist"; sourceTree = "<group>"; };
 		B4F5DC46BFE0A37B62A8A87B /* WebtoonDetail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebtoonDetail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,12 +247,22 @@
 		BDBBC30C4219F0AB96C2DAA3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C08CE09A847894A04C7B8366 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		C4A87CF620EEC5697F71C06C /* WebtoonDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonDetailFeature.swift; sourceTree = "<group>"; };
+		C670F81FF725EA4761F29B4B /* SearchBarPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarPresentationModel.swift; sourceTree = "<group>"; };
 		C81A65D230C13E72FD8D439E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CBCB1D98915583C2117BB00E /* EpisodesSectionPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesSectionPresentationModel.swift; sourceTree = "<group>"; };
 		D0AFC016E24ECDEF7454F8B6 /* TuistBundle+WebtoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+WebtoonApp.swift"; sourceTree = "<group>"; };
+		D5E396B59355235B4E7FB580 /* WebtoonGridPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonGridPresentationModel.swift; sourceTree = "<group>"; };
+		DA08D24F39524622703DFFCD /* ViewerNavigationOverlayPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerNavigationOverlayPresentationModel.swift; sourceTree = "<group>"; };
+		DC2ACA052942561C8B23F011 /* ViewerNavigationOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerNavigationOverlayView.swift; sourceTree = "<group>"; };
+		DF57B21AD507B2F3BCE95F91 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		E67B3A7B217A6FBA93A427F7 /* WebtoonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonDetailView.swift; sourceTree = "<group>"; };
+		EF6431DD81BEB895870FFBBC /* WebtoonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonCardView.swift; sourceTree = "<group>"; };
 		F1C6035E368A81608271E965 /* WebtoonList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebtoonList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F557D4B7AE2398686DCE920D /* WebtoonViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebtoonViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F6DA27E522C8449DD34EE9 /* WebtoonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebtoonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6BAADD9A448C33A3C212888 /* EpisodeRowPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRowPresentationModel.swift; sourceTree = "<group>"; };
 		F86810620654FE4CAAAF3806 /* WebtoonListFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonListFeature.swift; sourceTree = "<group>"; };
+		FE4EDC29399671D6FB7E6FE7 /* ScrollViewerContentPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewerContentPresentationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,7 +392,14 @@
 		71B7A66911195A1F426E5D2E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				F6BAADD9A448C33A3C212888 /* EpisodeRowPresentationModel.swift */,
+				568374A841D89815479D6FDC /* EpisodeRowView.swift */,
+				CBCB1D98915583C2117BB00E /* EpisodesSectionPresentationModel.swift */,
+				A0C1C1123AABF87B7C8EA0D5 /* EpisodesSectionView.swift */,
 				C4A87CF620EEC5697F71C06C /* WebtoonDetailFeature.swift */,
+				E67B3A7B217A6FBA93A427F7 /* WebtoonDetailView.swift */,
+				441713D9C3ECFE3FBB9771AE /* WebtoonHeaderPresentationModel.swift */,
+				096A2C6B8B321A2786893954 /* WebtoonHeaderView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -372,7 +423,14 @@
 		A0E4C7537797C861DBA06DF6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C670F81FF725EA4761F29B4B /* SearchBarPresentationModel.swift */,
+				96296A2E470190BA6DCBC018 /* SearchBarView.swift */,
+				85FA60364EB9EFB431D7CCC1 /* WebtoonCardPresentationModel.swift */,
+				EF6431DD81BEB895870FFBBC /* WebtoonCardView.swift */,
+				D5E396B59355235B4E7FB580 /* WebtoonGridPresentationModel.swift */,
+				4B73AE5CB45C954951CE29D9 /* WebtoonGridView.swift */,
 				F86810620654FE4CAAAF3806 /* WebtoonListFeature.swift */,
+				76ACBE167E477AF320A9D0FD /* WebtoonListView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -381,6 +439,7 @@
 			isa = PBXGroup;
 			children = (
 				B8A65A748F9BEF9FC0A2E1D2 /* AppFeature.swift */,
+				DF57B21AD507B2F3BCE95F91 /* AppView.swift */,
 				86A0BA97750F478E54A65BA8 /* WebtoonApp.swift */,
 			);
 			path = Sources;
@@ -410,7 +469,14 @@
 		B6F0BC07D7DC6896B0FA1B59 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				936257CECEB2B3BD469EC9D9 /* PageViewerContentPresentationModel.swift */,
+				458733C894F6E34C43F54180 /* PageViewerContentView.swift */,
+				FE4EDC29399671D6FB7E6FE7 /* ScrollViewerContentPresentationModel.swift */,
+				304BEDFFFCF93A1EA58748F7 /* ScrollViewerContentView.swift */,
+				DA08D24F39524622703DFFCD /* ViewerNavigationOverlayPresentationModel.swift */,
+				DC2ACA052942561C8B23F011 /* ViewerNavigationOverlayView.swift */,
 				476CB4EFB8C842377BF9735C /* WebtoonViewerFeature.swift */,
+				61004A2798BBFE8BE8C815C9 /* WebtoonViewerView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -697,6 +763,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3B0D7B737B1B36760E5B986 /* AppFeature.swift in Sources */,
+				32C2D6BF29B61318F6F138CF /* AppView.swift in Sources */,
 				9978E1B6B6BCF112385442A6 /* WebtoonApp.swift in Sources */,
 				3C3F34D3F959C1D468BD1137 /* TuistAssets+WebtoonApp.swift in Sources */,
 				F52A1D17AA3E18140B97348E /* TuistBundle+WebtoonApp.swift in Sources */,
@@ -707,7 +774,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55EEFE9DAE1584D1B062B6A8 /* PageViewerContentPresentationModel.swift in Sources */,
+				0343E4B52CCF92E92F91B087 /* PageViewerContentView.swift in Sources */,
+				FC6EC1E6F72817B8B94AFF58 /* ScrollViewerContentPresentationModel.swift in Sources */,
+				A6BC356F94B58C4E431CE025 /* ScrollViewerContentView.swift in Sources */,
+				7D2601D850A863E22C9C1C69 /* ViewerNavigationOverlayPresentationModel.swift in Sources */,
+				FBA2D85B23F9106E94BC12C0 /* ViewerNavigationOverlayView.swift in Sources */,
 				7E25E8280D684305D0BC1595 /* WebtoonViewerFeature.swift in Sources */,
+				EF7861F5C7D56F9BFBF37150 /* WebtoonViewerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,7 +800,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5C699936D8C294BDF2527E /* SearchBarPresentationModel.swift in Sources */,
+				E2616559F91551667CBEFFE9 /* SearchBarView.swift in Sources */,
+				EB68AAFA1847923E80B5F57A /* WebtoonCardPresentationModel.swift in Sources */,
+				C3638BBB55F411D7C17A4571 /* WebtoonCardView.swift in Sources */,
+				D30082B884B212BC42F69E01 /* WebtoonGridPresentationModel.swift in Sources */,
+				01E5DDF8712CD68F0E1C00A1 /* WebtoonGridView.swift in Sources */,
 				31B161DEA5C1BEFB5A72CC31 /* WebtoonListFeature.swift in Sources */,
+				399768E67B9210A9B6638347 /* WebtoonListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,7 +815,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC018EACD961CF5EA0288A4D /* EpisodeRowPresentationModel.swift in Sources */,
+				69E44AB6280A03E2F553E65B /* EpisodeRowView.swift in Sources */,
+				BF921F439BA7B30C0486AE61 /* EpisodesSectionPresentationModel.swift in Sources */,
+				E97EF94D26C9908AF1DDFC6D /* EpisodesSectionView.swift in Sources */,
 				F31382016BA42652C0424F7D /* WebtoonDetailFeature.swift in Sources */,
+				AA939CF9A287C8B4DA64DA72 /* WebtoonDetailView.swift in Sources */,
+				7A31A840FEDEC179D6EFBEC8 /* WebtoonHeaderPresentationModel.swift in Sources */,
+				65174D367750DD65EBBB89CC /* WebtoonHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
