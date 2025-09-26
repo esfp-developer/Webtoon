@@ -1,5 +1,4 @@
 import SwiftUI
-import Core
 
 // MARK: - Colors
 public extension Color {

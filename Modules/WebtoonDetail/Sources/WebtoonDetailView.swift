@@ -1,6 +1,5 @@
 import SwiftUI
 import ComposableArchitecture
-import Core
 import UI
 
 // MARK: - Webtoon Detail View
@@ -35,7 +34,7 @@ public struct WebtoonDetailView: View {
                         
                         // Episodes
                         EpisodesSectionView(
-                            episodes: store.episodes,
+                            presentationModel: EpisodesSectionPresentationModel(episodes: store.episodes),
                             onEpisodeTap: { episodeId in
                                 store.send(.episodeTapped(episodeId))
                             }
@@ -57,14 +56,16 @@ public struct WebtoonDetailView: View {
 #if DEBUG
 struct WebtoonDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            WebtoonDetailView(
-                store: Store(
-                    initialState: WebtoonDetailFeature.State(webtoonId: "1")
-                ) {
-                    WebtoonDetailFeature()
-                }
-            )
+        WithPerceptionTracking {
+            NavigationView {
+                WebtoonDetailView(
+                    store: Store(
+                        initialState: WebtoonDetailFeature.State(webtoonId: "1")
+                    ) {
+                        WebtoonDetailFeature()
+                    }
+                )
+            }
         }
     }
 }

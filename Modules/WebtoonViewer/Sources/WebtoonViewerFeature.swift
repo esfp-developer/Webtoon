@@ -1,7 +1,5 @@
-import SwiftUI
 import ComposableArchitecture
 import Core
-import UI
 
 // MARK: - Webtoon Viewer Feature
 @Reducer
@@ -47,7 +45,7 @@ public struct WebtoonViewerFeature {
         case retryTapped
     }
     
-    @Dependency(\.networkService) var networkService
+    @Dependency(\.webtoonService) var webtoonService
     
     public init() {}
     
@@ -66,7 +64,7 @@ public struct WebtoonViewerFeature {
                 
                 return .run { [episodeId = state.episodeId] send in
                     do {
-                        let episode = try await networkService.fetchEpisodeDetail(episodeId)
+                        let episode = try await webtoonService.fetchEpisodeDetail(episodeId)
                         await send(.episodeResponse(.success(episode)))
                     } catch let error as NetworkError {
                         await send(.episodeResponse(.failure(error)))
@@ -125,8 +123,16 @@ public struct WebtoonViewerFeature {
             return "잘못된 URL입니다."
         case .noData:
             return "데이터를 불러올 수 없습니다."
-        case .decodingError:
-            return "데이터 형식이 올바르지 않습니다."
+        case .decodingError(let message):
+            return "데이터 형식이 올바르지 않습니다: \(message)"
+        case .invalidResponse:
+            return "잘못된 응답입니다."
+        case .statusCode(let code):
+            return "서버 오류 (코드: \(code))"
+        case .timeout:
+            return "요청 시간이 초과되었습니다."
+        case .cancelled:
+            return "요청이 취소되었습니다."
         case .networkError(let message):
             return "네트워크 오류: \(message)"
         }

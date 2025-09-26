@@ -101,6 +101,11 @@ Derived/
 *.xcworkspace/xcuserdata/
 .tuist-version
 
+# Additional Xcode user data
+*.xcworkspace/xcuserdata/*/UserInterfaceState.xcuserstate
+*.xcodeproj/xcuserdata/*/UserInterfaceState.xcuserstate
+**/xcuserdata/*/UserInterfaceState.xcuserstate
+
 # OS generated files
 .DS_Store
 .DS_Store?

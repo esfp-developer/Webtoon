@@ -5,7 +5,7 @@ let project = Project(
     packages: [
         .remote(
             url: "https://github.com/pointfreeco/swift-composable-architecture",
-            requirement: .upToNextMajor(from: "1.21.1")
+            requirement: .upToNextMajor(from: "1.22.3")
         )
     ],
     targets: [
@@ -29,8 +29,7 @@ let project = Project(
             dependencies: [
                 .target(name: "WebtoonList"),
                 .target(name: "WebtoonDetail"),
-                .target(name: "WebtoonViewer"),
-                .target(name: "UI")
+                .target(name: "WebtoonViewer")
             ]
         ),
         
@@ -57,7 +56,7 @@ let project = Project(
             sources: ["Modules/UI/Sources/**"],
             resources: ["Modules/UI/Resources/**"],
             dependencies: [
-                .target(name: "Core")
+
             ]
         ),
         

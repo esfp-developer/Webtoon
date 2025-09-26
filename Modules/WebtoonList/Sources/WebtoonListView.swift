@@ -1,6 +1,5 @@
 import SwiftUI
 import ComposableArchitecture
-import Core
 import UI
 
 // MARK: - Webtoon List View
@@ -13,14 +12,13 @@ public struct WebtoonListView: View {
     
     public var body: some View {
         WithPerceptionTracking {
+            @Perception.Bindable var store = store
+            
             NavigationView {
                 VStack(spacing: 0) {
                     // Search Bar
                     SearchBarView(
-                        text: Binding(
-                            get: { store.searchText },
-                            set: { store.send(.searchTextChanged($0)) }
-                        )
+                        text: $store.searchText.sending(\.searchTextChanged)
                     )
                     .spacing(.md)
                     
@@ -64,11 +62,13 @@ public struct WebtoonListView: View {
 #if DEBUG
 struct WebtoonListView_Previews: PreviewProvider {
     static var previews: some View {
-        WebtoonListView(
-            store: Store(initialState: WebtoonListFeature.State()) {
-                WebtoonListFeature()
-            }
-        )
+        WithPerceptionTracking {
+            WebtoonListView(
+                store: Store(initialState: WebtoonListFeature.State()) {
+                    WebtoonListFeature()
+                }
+            )
+        }
     }
 }
 #endif

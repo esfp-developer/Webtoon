@@ -1,5 +1,4 @@
 import SwiftUI
-import Core
 import UI
 
 // MARK: - Episode Row
@@ -7,8 +6,8 @@ struct EpisodeRowView: View {
     let presentationModel: EpisodeRowPresentationModel
     let onTap: () -> Void
     
-    init(episode: Episode, onTap: @escaping () -> Void) {
-        self.presentationModel = EpisodeRowPresentationModel(episode: episode)
+    init(presentationModel: EpisodeRowPresentationModel, onTap: @escaping () -> Void) {
+        self.presentationModel = presentationModel
         self.onTap = onTap
     }
     

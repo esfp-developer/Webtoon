@@ -1,5 +1,4 @@
 import SwiftUI
-import Core
 import UI
 
 // MARK: - Episodes Section
@@ -7,8 +6,8 @@ struct EpisodesSectionView: View {
     let presentationModel: EpisodesSectionPresentationModel
     let onEpisodeTap: (String) -> Void
     
-    init(episodes: [Episode], onEpisodeTap: @escaping (String) -> Void) {
-        self.presentationModel = EpisodesSectionPresentationModel(episodes: episodes)
+    init(presentationModel: EpisodesSectionPresentationModel, onEpisodeTap: @escaping (String) -> Void) {
+        self.presentationModel = presentationModel
         self.onEpisodeTap = onEpisodeTap
     }
     
@@ -37,7 +36,7 @@ struct EpisodesSectionView: View {
             } else {
                 LazyVStack(spacing: Spacing.sm.value) {
                     ForEach(presentationModel.episodes) { episode in
-                        EpisodeRowView(episode: episode) {
+                        EpisodeRowView(presentationModel: EpisodeRowPresentationModel(episode: episode)) {
                             onEpisodeTap(episode.id)
                         }
                     }

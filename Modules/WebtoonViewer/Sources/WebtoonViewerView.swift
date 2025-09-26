@@ -1,6 +1,5 @@
 import SwiftUI
 import ComposableArchitecture
-import Core
 import UI
 
 // MARK: - Webtoon Viewer View
@@ -49,12 +48,17 @@ public struct WebtoonViewerView: View {
                 
                 // Navigation Overlay
                 if !store.isNavigationHidden, let episode = store.episode {
+                    let currentPageIndex = store.currentPageIndex
+                    let viewerMode = store.viewerMode
+                    let hasNextPage = store.hasNextPage
+                    let hasPreviousPage = store.hasPreviousPage
+                    
                     ViewerNavigationOverlayView(
                         episode: episode,
-                        currentPageIndex: store.currentPageIndex,
-                        viewerMode: store.viewerMode,
-                        hasNextPage: store.hasNextPage,
-                        hasPreviousPage: store.hasPreviousPage,
+                        currentPageIndex: currentPageIndex,
+                        viewerMode: viewerMode,
+                        hasNextPage: hasNextPage,
+                        hasPreviousPage: hasPreviousPage,
                         onPreviousPage: {
                             store.send(.previousPage)
                         },
@@ -79,13 +83,15 @@ public struct WebtoonViewerView: View {
 #if DEBUG
 struct WebtoonViewerView_Previews: PreviewProvider {
     static var previews: some View {
-        WebtoonViewerView(
-            store: Store(
-                initialState: WebtoonViewerFeature.State(episodeId: "ep1")
-            ) {
-                WebtoonViewerFeature()
-            }
-        )
+        WithPerceptionTracking {
+            WebtoonViewerView(
+                store: Store(
+                    initialState: WebtoonViewerFeature.State(episodeId: "ep1")
+                ) {
+                    WebtoonViewerFeature()
+                }
+            )
+        }
     }
 }
 #endif
